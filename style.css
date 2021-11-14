@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins';
+    font-size: 100%;
+    font-weight: 300;
+    /* color: #000; */
+    font-weight: 400;
+    background-image: linear-gradient(90deg,#E3FFFD, #FFEDFB);
+}
+.nav-item a{
+    /* color: #9560B9; */
+    color: #000;
+}
+.nav-item a:hover{
+    color: #12C0DB;
+    
+}
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item{
+    padding: 0.625rem;
+    transition: all 200ms linear;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+.nav-link{
+    font-size: 1.156rem;
+    font-weight: 500;
+    text-transform: none;
+    /* color: #000; */
+    
+    /* letter-spacing: 1px; */
+}
+
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #9560B9;
+    /* box-shadow: ;*/
+} 
+
+
+/* customscroll 
+==================*/
+::-webkit-scrollbar{
+    width: 0.7rem;
+}
+::-webkit-scrollbar-track{
+    background: #9560B9;
+}
+
+.main-btn{
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    line-height: 1.3rem;
+    background-color:  #EAF98E;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0.3rem;
+}
+.main-btn:hover{
+    background: transparent;
+}
+
+
+/* ========bannner======= */
+.top-banner{
+    width: 100%;
+    background-image: url('images/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 16.875rem 9.375rem;
+}
+
+/* ========counter======== */
+.counter-section{
+    background-color: #BB6CDB;
+    padding: 2.5rem 0;
+
+}
+.counter-section p{
+     color: #fff;
+     text-transform: uppercase;
+}
+.col-md-3 span{
+    color: #fff;
+}
+.ffod-type ul li{
+    font-size: 1rem;
+    line-height: 32px;
+
+}
+
+/* ========about========= */
+.card img{
+    border-radius: 1rem;
+}
+.story-section{
+    width: 100%;
+    height: 28.125rem;
+    background-image: url('images/bg-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+.text-content{
+    margin-top: 10rem;
+}
+.card{
+     border: none;
+     background-color: transparent;
+     border-radius: 1rem;
+}
+/* .explore-food .card img{
+    border-radius: 1rem;
+    object-fit: vover;
+
+} */
+.explore-food .card span{
+    display: block;
+}
+.explore-food .card span del{
+    color: #11AEEB;
+} 
+.testimonial-section{
+    /* background-color: #FFEDFB; */
+}
+.testimonial-section .carousel-item{
+    margin-top: 3rem;
+    padding: 3rem 3.125rem;
+    background-color: #ddbcf8;
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+
+.img-c{
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+}
+.book-food{
+    width: 100%;
+    
+    background-image: url('images/bg-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:0 71.9125px;
+    padding: 4.375rem 0;
+}
+.footer{
+   background-color: #2C3E50;
+}
+
+.footer .footer-link{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 1rem;
+    text-decoration: none;
+}
+.footer .footer-link:hover{
+    text-decoration: underline;
+    
+}
+.footer a i{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0.25rem;
+}
+
+
+@media (max-width: 991px){
+    .navigation-wrap .navbar-brand img{
+        height: 3.8125rem;
+    }
+    .navigation-wrap{
+        text-align: center;
+        /* background-color: #E3FFFD; */
+        background-color: #f2fffe;
+    }
+    .navigation-wrap .nav-links{
+        line-height: 1.875rem;
+    }
+    .top-banner{
+        padding: 9.375rem;
+    }
+    .text-content{
+        margin-top: 7rem;
+    }
+}
